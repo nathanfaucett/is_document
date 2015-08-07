@@ -4,6 +4,6 @@ var isNode = require("is_node");
 module.exports = isDocument;
 
 
-function isDocument(obj) {
-    return isNode(obj) && obj.nodeType === 9;
+function isDocument(value) {
+    return isNode(value) && value.nodeType === 9;
 }
